@@ -9,6 +9,7 @@ Find sum to 10000
 """
 
 import time
+import itertools
 
 def run(limit):
     t0 = time.time()

@@ -22,6 +22,6 @@ def run(n):
         n += 1
 
 if __name__ == '__main__':
-    run (22)
+    run(22)
     run(10**11)
     run(10**13)
