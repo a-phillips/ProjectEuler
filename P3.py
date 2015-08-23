@@ -1,4 +1,6 @@
 import time
+
+#Original
 def get_primes(limit):
 	prime_index = [0]*(limit+1)
 	primes = []
@@ -12,7 +14,7 @@ def get_primes(limit):
 		if idx == 0 and i > 1:
 			primes.append(i)
 	return primes
-	
+
 def use_prime_list(num):
 	t0 = time.time()
 	primes = get_primes(int(num**.5)+1)
@@ -24,6 +26,7 @@ def use_prime_list(num):
 	print time.time() - t0
 	print primes[i-1]
 
+#Faster
 def use_check_all(num):
 	t0 = time.time()
 	i = 2
@@ -34,6 +37,7 @@ def use_check_all(num):
 	print time.time() - t0
 	print i-1
 
-limit = 600851475143
-use_prime_list(limit)
-use_check_all(limit)
+if __name__ == "__main__":
+	limit = 600851475143
+	use_prime_list(limit)
+	use_check_all(limit)

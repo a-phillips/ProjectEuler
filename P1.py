@@ -8,4 +8,5 @@ def get_sum(limit, mults):
 				break
 	return total
 
-print get_sum(1000, [3, 5])
+if __name__ == "__main__":
+	print get_sum(1000, [3, 5])

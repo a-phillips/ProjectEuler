@@ -14,5 +14,6 @@ def sum_even_fib(limit):
 		a, b = b, a + b
 		
 	print total
-
-sum_even_fib(4000000)
+	
+if __name__ == "__main__":
+	sum_even_fib(4000000)
