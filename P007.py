@@ -31,5 +31,5 @@ def get_nth_prime(n):
 if __name__ == "__main__":
 	t0 = time.time()
 	answer = get_nth_prime(10001)
-	print time.time() - t0
-	print answer
+	print(time.time() - t0)
+	print(answer)
